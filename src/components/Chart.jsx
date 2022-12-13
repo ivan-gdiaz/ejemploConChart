@@ -2,6 +2,10 @@ import React from 'react';
 import api2 from '../api2';
 import { useEffect, useState } from 'react';
 import { Line } from 'react-chartjs-2';
+
+import { CategoryScale } from "chart.js";
+import { Chart as ChartJS } from "chart.js/auto";
+
 import '../Chart.css';
 
 export default function ChartTest() {
@@ -20,13 +24,13 @@ export default function ChartTest() {
             }
         });
          
-        // setDataChart({ 
-        //   labels: dateOfCases, 
-        //   datasets: [{ 
-        //     label: 'Confirmed cases', 
-        //     data: confirmedCases 
-        //   }]
-        // });
+        setDataChart({ 
+          labels: dateOfCases, 
+          datasets: [{ 
+            label: 'Confirmed cases', 
+            data: confirmedCases 
+          }]
+        });
 
     }
 
