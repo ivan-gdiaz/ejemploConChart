@@ -27,8 +27,11 @@ export default function ChartTest() {
         setDataChart({ 
           labels: dateOfCases, 
           datasets: [{ 
+            fill: true,
             label: 'Confirmed cases', 
-            data: confirmedCases 
+            data: confirmedCases, 
+            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgba(255, 99, 132, 0.5)',
           }]
         });
 

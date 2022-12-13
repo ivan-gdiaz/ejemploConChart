@@ -12,6 +12,7 @@ import EjemploCards1 from "./EjemploCards1.jsx"
 import EjemploCards2 from "./EjemploCards2.jsx"
 import NotFound from "./NotFound.jsx"
 import ChartTest from "./Chart.jsx"
+import Radar from "./Radar.jsx"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/' element={<Layout />}> {/* Ejemplo con rutas anidadas */}
             <Route index element={< PersonList/>} />     {/* sería el "Home" */}
             <Route path='chart' element={<ChartTest />} />
+            <Route path='radar' element={<Radar />} />
             <Route path='botones' element={<GrupoBotones />} />
             <Route path='botones/:id' element={<Acordeon />} />
 

@@ -41,6 +41,9 @@ export default function Layout() {
               <NavLink href="/chart">Gráfica</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="/radar">Radar</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="/botones">Botones</NavLink>
             </NavItem>
             <NavItem>
